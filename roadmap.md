@@ -3,8 +3,9 @@
 - [ ] Research which UI/UX frameworks to use [leaning towards react]
 - [ ] Come up with a snazzy title
 - [ ] Pick three primary colors (pastel)
+- [ ] Pick a logo and a cutesy mascot that encourages people (think Clippy in Office Assistant)
 - [ ] intended audiences: for people who prefer to use a timer that has flash instead of sound & can categorize their kanban tasks around a pomodoro approach. 
-- [ ] languages used: HTML, CSS, JavaScript, React, Node.js, MongoDB, Express.js, maybe: ember.js 
+- [ ] languages used: HTML, CSS, JavaScript, React, Node.js, MongoDB, Express.js, maybe: ember.js (will need research a bit more on this and read documentation if this will be benefical)
 - [ ] Features: 
     - [ ] Kanban layout
     - [ ] Minimalist
