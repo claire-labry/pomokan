@@ -25,3 +25,12 @@
             - [ ] after four pomodoro blocks, 15 minute break
             - [ ] congratulatory message once someone reaches 8 blocks
 
+techs used: 
+
+- [x] react
+- [x] webpack
+- [x] babel
+- [x] html5
+- [x] css3
+- [x] 
+- [x]
