@@ -4,8 +4,8 @@
   "description": "## this is a repo in working effect. a description will come shortly.",
   "main": "index.js",
   "scripts": {
-    "webpack-dev-server":"webpack-dev-server",
-    "dev":"webpack-dev-server --mode=development",
+    "webpack-dev-server": "webpack-dev-server",
+    "dev": "webpack-dev-server --mode=development",
     "prod": "webpack --mode=production"
   },
   "repository": {
@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/claire-labry/pomokan#readme",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/styles": "^4.10.0",
     "css-loader": "^4.3.0",
     "file-loader": "^6.1.0",
     "react": "^16.13.1",

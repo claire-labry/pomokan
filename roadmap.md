@@ -5,8 +5,8 @@
 - [x] Pick three primary colors (productivity colors: restful green (#96AB36), calming blue(#96CCB9), & mellow yellow(#FFE251))
 - [x] Pick a logo and a cutesy mascot that encourages people (think Clippy in Office Assistant) (mascot shall come much later in future updates)
 - [x] problem solved: for people who prefer to use a timer that has flash instead of sound & can categorize their kanban tasks around a pomodoro approach. (deaf folks, folks who prefer to not have sound)
-- [x] languages used: HTML, CSS, JavaScript, React, Node.js, MongoDB/Mongoose, Express.js, maybe: ember.js (will need research a bit more on this and read documentation if this will be benefical https://emberjs.com/)
-- [ ] starter files
+- [x] languages used: HTML, CSS, JavaScript, React, Node.js, MongoDB/Mongoose, Express.js,
+- [x] starter files
 - [ ] layout completed?
 - [ ] minimal functionality (CRUD)?
     - [ ] Features: 
@@ -28,6 +28,7 @@
 techs used: 
 
 - [x] react
+- [x] material-ui
 - [x] webpack
 - [x] babel
 - [x] html5
