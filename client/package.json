@@ -1,24 +1,16 @@
 {
-  "name": "pomokan",
+  "name": "client",
   "version": "1.0.0",
-  "description": "## this is a repo in working effect. a description will come shortly.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "webpack-dev-server": "webpack-dev-server",
     "dev": "webpack-dev-server --mode=development",
     "prod": "webpack --mode=production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/claire-labry/pomokan.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/claire-labry/pomokan/issues"
-  },
-  "homepage": "https://github.com/claire-labry/pomokan#readme",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "css-loader": "^4.3.0",
