@@ -1,15 +1,9 @@
-import * as express from 'express';
+const express = require('express');
 
-
-
-// express setup
 const app = express();
 
-// middleware setup
-app.use(express.urlencoded({extended:true}));
+app.get('/', (req, res) => res.send('API running'))
 
-app.use(express.json);
+const PORT = process.env.PORT || 5000;
 
-
-
-const PORT = process.env.PORT || 5000
+app.listen(PORT, () => console.log(`Server has started on PORT ${PORT}`));
