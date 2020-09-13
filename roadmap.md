@@ -29,9 +29,9 @@ techs used:
 
 - [x] react
 - [x] material-ui
-- [x] webpack
-- [x] babel
-- [x] html5
-- [x] css3
-- [x] 
+- [x] mongodb atlas
+- [x] mongoose
+- [x] express.js
+- [x] bcrypt.js
+- [x] node.js
 - [x]
