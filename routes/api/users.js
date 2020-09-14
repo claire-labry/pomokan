@@ -3,7 +3,7 @@ const router = express.Router();
 const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const config = require('config') 
+const config = require('config'); 
 const { check, validationResult } = require('express-validator');
 
 const User = require('../../models/User');
@@ -13,7 +13,7 @@ const User = require('../../models/User');
 //  @access  Public
 router.post(
   '/',
-  [check('name', 'Name is required').not().isEmpty()
+  [check('name', 'Name is required')
     .not()
     .isEmpty(),
     check('email', '~ Please include a valid email ~').isEmail(),
@@ -32,7 +32,7 @@ async (req, res) => {
         let user = await User.findOne({ email });
 
         if(user){
-            res.status(400).json({ errors:[{ msg:'~ User already exists, try again! ~' }] });
+          return res.status(400).json({ errors:[{ msg:'~ User already exists, try again! ~' }] });
         }
         
         const avatar = gravatar.url(email,{
