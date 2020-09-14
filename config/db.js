@@ -10,7 +10,7 @@ const connectDB = async () => {
             useCreateIndex: true
         })
         
-        console.log('MongoDB Connected!');
+        console.log('~ MongoDB Atlas is Connected ~');
     } catch(err){
         console.log(err.message);
         // exit process with failure
