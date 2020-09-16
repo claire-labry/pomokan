@@ -34,4 +34,4 @@ techs used:
 - [x] express.js
 - [x] bcrypt.js
 - [x] node.js
-- [x]
+- [x] postman

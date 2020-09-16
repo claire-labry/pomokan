@@ -180,19 +180,19 @@ router.post(
     
         try {
             const user = await User.findById(req.user.id).select('-password');
-
             const task = await Task.findById(req.params.id);
         
-            const newComment = new Task ({
+            const newComment = {
                 text: req.body.text,
                 name: user.name,
                 avatar: user.avatar,
                 user: req.user.id
-            });
+            };
 
             task.comments.unshift(newComment);
 
             await task.save();
+            res.json(task.comments)
         } catch (err) {
             console.error(err.message);
             res.status(500).send('~server error~')
@@ -200,15 +200,14 @@ router.post(
     },
     );
 
-//  @route   DELETE api/tasks/comment/:id
+//  @route   DELETE api/tasks/comment/:id/:comment_id
 //  @desc    add a comment to your task
 //  @access  private
 router.delete(
-    '/comment/:id', auth, async (req, res) => {
+    '/comment/:id/:comment_id', auth, async (req, res) => {
     
         try {
             const task = await Task.findById(req.params.id);
-        
             const comment = task.comments.find(comment => comment.id === req.params.comment_id);
 
             // ensures that the comment does exist
@@ -226,6 +225,8 @@ router.delete(
 
             task.comments.splice(removeIndex, 1)
             await task.save();
+
+            res.json(task.comments);
         } catch (err) {
             console.error(err.message);
             res.status(500).send('~server error~')
