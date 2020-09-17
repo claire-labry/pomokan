@@ -7,7 +7,6 @@ const useStyles = makeStyles({
   contentPlacing: {
     flexFlow: 'column wrap',
     flexGrow: '1',
-    height: '100vh',
     padding: '20px'
 
   },
